@@ -1,0 +1,630 @@
+/* ==========================
+   共通設定
+========================== */
+
+body{
+    margin:0;
+    font-family:"Noto Sans JP", sans-serif;
+}
+
+/* ==========================
+   ヘッダー
+========================== */
+
+.site-header{
+    /* サイズ */
+    width:1200px;
+    height:100px;
+
+    /* 余白 */
+    margin:0 auto;
+
+    /* レイアウト */
+    display:flex;
+    align-items:center;
+}
+
+.site-header img{
+    /* サイズ */
+    width:374px;
+}
+
+/* ==========================
+   ヒーローエリア
+========================== */
+
+.hero{
+
+    /* サイズ */
+    width:1200px;
+    height:800px;
+
+    /* 配置 */
+    margin:0 auto;
+
+    /* 背景 */
+    background-image:url("img/hero.png");
+    background-size:cover;
+    background-position:center;
+
+    /* ボックスモデル */
+    box-sizing:border-box;
+
+    /* 内側余白 */
+    padding-top:45px;
+    padding-right:52px;
+
+    /* 余白 */
+    margin-bottom:100px;
+
+    /* レイアウト */
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+   
+    /* 位置基準 */
+    position:relative;
+}
+
+.hero-copy{
+    width:666px;
+    text-align:right;
+}
+
+.hero h1{
+    margin:0;
+    color:white;
+    font-size:60px;
+}
+
+.hero p{
+    margin:0;
+    color:white;
+    font-size:30px;
+}
+
+.photo-caption{
+    position:absolute;
+    left:50px;
+    bottom:30px;
+
+    color:white;
+    font-size:20px;
+}
+
+
+
+
+/* ==========================
+   イントロエリア
+========================== */
+
+.intro{
+
+    /* サイズ */
+    width:980px;
+
+    /* 配置 */
+    margin:0 auto;
+
+    /* ボックスモデル */
+    box-sizing:border-box;
+
+    /* 余白 */
+    margin-bottom:100px;
+
+    /* レイアウト */
+    display:flex;
+    gap:80px;
+    justify-content:center;
+    align-items:flex-start;
+}
+
+.intro-heading{
+
+    /* サイズ */
+    width:300px;
+    height:300px;
+    flex-shrink:0;
+
+    /* 配置 */
+    text-align:center;
+
+    /* 背景 */
+    background:#F5F1E8;
+    border-radius:25px;
+
+    /* レイアウト */
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.intro-logo img{
+    /* サイズ */
+    width: 248px;
+}
+
+.intro-label{
+
+    /* 配置 */
+    text-align:center;
+}
+
+.intro-date{
+    /* サイズ */
+    font-size:16px;
+    font-weight:700;
+
+    /* 余白 */
+    margin:12px 0 12px 0;
+    
+}
+
+.intro-label h2{
+    /* サイズ */
+    font-size:32px;
+    letter-spacing:0.2em;
+
+    /* 余白 */
+    margin:0;
+}
+
+.intro-text{
+    /* サイズ */   
+    width:672px;
+    height:300px; 
+}
+
+.intro-text p{
+    /* サイズ */
+    font-size:20px;
+    line-height:27px;
+    letter-spacing:0.05em;
+
+   /* 余白 */
+   margin:0 0 27px 0;
+}
+
+.intro-text p:last-child{
+    margin-bottom:0;
+}
+
+/* ==========================
+   スポットエリア
+========================== */
+
+.spot{
+    /* サイズ */
+    width:1200px;
+
+    /* 余白 */
+    margin:0 auto;
+    margin-bottom:100px;
+
+    /* レイアウト */
+    display:flex;
+    gap:50px;
+}
+
+/* ==========================
+   SPOT01~03エリア
+========================== */
+
+.spot-photo img{
+    /* サイズ */
+    width:700px;
+    height:466px;
+
+     /* 画像調整 */
+    object-fit:cover;
+}
+
+.spot-text{
+    /* サイズ */
+    font-size:20px;
+    line-height:24px;
+    width:450px;
+    letter-spacing:0.15em;
+}
+
+.spot-text h2{
+    /* サイズ */
+    font-size:20px;
+    letter-spacing:0.2em;
+    /* 余白 */
+    margin:0 0 24px 0;
+}
+
+.spot-text p{
+    /* 余白 */
+    margin:0 0 24px 0;
+}
+
+.spot-text p:last-child{
+    /* 余白 */
+    margin-bottom:0;
+}
+
+/* ==========================
+   SPOT01
+========================== */
+.spot01-icon{
+    color:#68A2DE;
+}
+
+/* ==========================
+   SPOT02
+========================== */
+.spot02-icon{
+    color:#FFE500;
+}
+
+/* ==========================
+   SPOT03
+========================== */
+.spot03-icon{
+    color:#F40000;
+}
+
+/* ==========================
+   エディターズノートエリア
+========================== */
+
+.editor-note{
+    /* サイズ */
+    width:1200px;
+
+    /* 余白 */
+    margin:0 auto;
+    margin-bottom:100px;
+
+    /* レイアウト */
+    display:flex;
+    gap:50px;
+}
+
+
+.editor-photo img{
+     /* サイズ */
+    width:360px;
+    height:360px;
+
+     /* 画像調整 */
+    object-fit:cover;
+}
+
+.editor-text{
+    /* サイズ */
+    font-size:20px;
+    line-height:24px;
+    width:790px;
+    letter-spacing:0.15em;
+}
+
+.editor-text h2{
+    /* サイズ */
+    font-size:20px;
+    letter-spacing:0.2em;
+
+    /* 余白 */
+    margin:0 0 24px 0;
+}
+
+.editor-text p{
+    /* 余白 */
+    margin:0 0 24px 0;
+}
+
+.editor-text p:last-child{
+    /* 余白 */
+    margin-bottom:0;
+}
+
+/* ==========================
+   マガジンインフォエリア
+========================== */
+
+.magazine-info{
+    /* サイズ */
+    width:1100px;
+    height:500px;
+
+    /* 余白 */
+    margin:0 auto 12px;
+
+    /* ボックスモデル */
+    box-sizing:border-box;
+
+    /* 内側余白 */
+    padding:60px 60px;
+
+    /* レイアウト */
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    /* 線 */
+    border:1px solid #000;
+}
+
+.magazine-cover img{
+     /* サイズ */
+    width:275px;
+    height:344px;
+
+    /* 画像調整 */
+    object-fit:cover;
+}
+
+.magazine-logo img{
+    /* サイズ */
+    width: 277px;
+
+    /* レイアウト */
+    display:block;
+}
+
+.magazine-logo{
+    /* 余白 */
+    margin-bottom:20px;
+}
+
+.magazine-detail{
+    /* サイズ */
+    width:372px;
+
+    /* レイアウト */
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.magazine-detail h2{
+    /* サイズ */
+    font-size:39px;
+    letter-spacing:0.05em;
+
+    /* 余白 */
+    margin:12px 0 8px 16px;
+}
+
+.magazine-detail p{
+    /* サイズ */
+    font-size:20px;
+    line-height:1.35;
+    letter-spacing:0.05em;
+
+    /* 余白 */
+    margin:0 0 6px 16px;
+}
+
+.magazine-links{
+    /* サイズ */
+    width:300px;
+
+    /* レイアウト */
+    display:flex;
+    flex-direction:column;
+    gap:29px;
+}
+
+.magazine-links span{
+    /* 表示 */
+    display:block;
+
+    /* 余白 */
+    padding:13px 0;
+    border:4px solid #000;
+
+    /* 線・影 */
+    color:#000;
+    text-align:center;
+    text-decoration:none;
+    font-size:20px;
+
+    /* ボックスの影 */
+    box-shadow:5px 5px 6px rgba(0,0,0,0.40);
+}
+
+.magazine-disclaimer {
+    /* サイズ・文字 */
+    width: 1100px;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #555;
+    text-align: right;
+
+    /* 余白 */
+    margin: 10px auto 100px;
+}
+
+
+/* ==========================
+   編集者選エリア
+========================== */
+
+.editor-picks{
+    /* サイズ */
+    width:1100px;
+    height: 324px;
+
+    /* 余白 */
+    margin:0 auto 120px;
+
+    /* レイアウト */
+    display:flex;
+}
+
+.editor-title{
+    /* サイズ */
+    width:70px;
+    font-size:40px;
+    line-height: 60px;
+    letter-spacing: 0.35em;
+ 
+    /* 背景 */
+    background: #BBD7F0;
+
+    /* レイアウト */
+    display:flex;
+    writing-mode:vertical-rl;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+}
+
+.editor-content {
+    /* 内側余白 */
+    padding: 0 40px 35px 40px;
+
+    /* レイアウト */
+    flex: 1;
+
+    /* 位置基準 */
+    position: relative;
+
+    /* 線 */
+    border-bottom: none;
+}
+
+    /* 下線 */
+    .editor-content::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+    right: 0;
+    height: 0.5px;
+    background-color: #000;
+}
+
+.editor-content h2{
+    /* サイズ */
+    font-size:20px;
+    letter-spacing:0.15em;
+
+    /* 余白 */
+    margin:0 0 16px 0;
+}
+
+.editor-content p{
+    /* サイズ */
+    font-size:20px;
+    letter-spacing:0.15em;
+
+    /* 余白 */
+    margin:0 0 10px 0;
+}
+
+.editor-content h3{
+    /* サイズ */
+    font-size:20px;
+    letter-spacing:0.15em;
+
+    /* 余白 */
+    margin:8px 0;
+}
+
+.recommend-item{
+    /* 内側余白 */
+    padding-bottom:8px;
+
+    /* 余白 */
+    margin-bottom:8px;
+
+    /* 線 */
+    border-bottom:1px dotted #666;
+}
+
+.editor-header{
+    /* 余白 */
+    margin-bottom:10px;
+    margin-right:-40px;
+
+    /* レイアウト */
+    display:flex;
+    align-items:center;
+    gap:24px;
+}
+
+.editor-content .editor-label {
+    /* 文字 */
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 0.15em;
+
+    /* 余白 */
+    margin: 0;
+}
+
+.editor-line{
+    /* サイズ */
+    height:1.5px;
+
+    /* 余白 */
+    margin:0;
+
+    /* 残り幅 */
+    flex:1;    
+
+    /* 色 */
+    background:#000;
+}
+
+/* ==========================
+   フッター
+========================== */
+
+.site-footer {
+    /* サイズ */
+    width: 1200px;
+    height: 200px;
+
+    /* 配置 */
+    margin: 0 auto;
+    padding-bottom: 20px;
+
+    /* フッター全体：左右に配置 */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.footer-brand {
+    /* 左側：ロゴと注意書きを縦に配置 */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.site-footer img {
+    width: 250px;
+}
+
+.footer-disclaimer {
+    /* 注意書き */
+    font-size: 12px;
+    line-height: 1.6;
+    color: #555;
+
+    /* 余白 */
+    margin: 0 0 0 20px;
+}
+
+.footer-meta {
+    /* サイズ */
+    width: 370px;
+}
+
+.footer-meta p {
+    /* 文字 */
+    font-size: 20px;
+    letter-spacing: 0.15em;
+
+    /* 余白 */
+    margin: 0;
+}
+
