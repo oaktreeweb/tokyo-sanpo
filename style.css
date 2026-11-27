@@ -628,3 +628,11 @@ body{
     margin: 0;
 }
 
+.footer-disclaimer a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.footer-disclaimer a:hover {
+    color: #000;
+}
